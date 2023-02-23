@@ -1,5 +1,5 @@
 # 📥 HIDROWEB_download
-Download time series in Hidro.exe format (database) of multiple rain gauges or stations
+Download time series in Hidro.exe format (database) of multiple rain gauges or stations. I built it in R, but it is easy to implement in any other programming language.
 
 Please check official [HIDROWEB website](https://www.snirh.gov.br/hidroweb/apresentacao) for further informations.
 
