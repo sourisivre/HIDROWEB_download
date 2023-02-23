@@ -1,14 +1,13 @@
-# SOURISIVRE - www.github.com/sourisivre
+# SOURISIVRE - www.github.com/sourisivre/HIDROWEB_download
 # Download Rain Gauge Data from HIDROWEB
 # fev.2023
 
+library(httr)
+
+# INPUT: you must edit this manually
 # Here goes the list of rain gauges you want to download time series
 # Further, you can implement a method to read a list from a txt file if the total amount
 # of rain gauges is big enough
-
-library(httr)
-
-#INPUT: you must edit this manually
 rgList <- c(639056,638070,639034,639074,638013,638067,639079,639011,638007,639036,
             639066,639028,638000,638056,638120,638091,639070,639032,639087,639023)
 
