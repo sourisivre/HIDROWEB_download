@@ -27,6 +27,7 @@ for (i in 1:length(rgList)){
     url <- paste(urlBase,"tipo=2&documentos=",rgList[i],sep="")
   }
   
+  # Here is a suggestion of delivery folder in root, you can edit the path by yourself
   pathFile <- paste("C:/Inventario/","Medicoes_",rgList[i],".zip",sep="")
 
   print(paste("Trying:",url))
