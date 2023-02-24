@@ -1,5 +1,5 @@
 # 📥 HIDROWEB_download
-Download time series in Hidro.exe format (database) of multiple rain gauges or stations. I built it in R, but it is easy to implement in any other programming language.
+Download time series in multiple formats (database, text file or csv) of multiple rain gauges or stations. I built it in R, but it is easy to implement in any other programming language.
 
 Please check official [HIDROWEB website](https://www.snirh.gov.br/hidroweb/apresentacao) for further informations.
 
@@ -9,7 +9,7 @@ Please check official [HIDROWEB website](https://www.snirh.gov.br/hidroweb/apres
 
 * In new Hidroweb format, the URL must be something like this `https://www.snirh.gov.br/hidroweb/rest/api/documento/convencionais?tipo=2&documentos=639021`
 
-* Where `tipo=2` refers to the kind of station (1-fluviometric or 2-pluviometric) and `documentos=639021` refers to the station code.
+* Where `tipo=2` refers to the format of data (1-`mdb`, 2-`txt` and 3-`csv`) and `documentos=639021` refers to the station code.
 
 * So, if you have a list of station codes, you can perform a loop via programming language (here in R) to download as many time series as the amount of stations.
 
@@ -18,5 +18,4 @@ Please check official [HIDROWEB website](https://www.snirh.gov.br/hidroweb/apres
 ## Important
 
 1. Download format is `.zip`, so the zipped file is a database (`.mdb`) in format of _[Hidro.exe](https://www.snirh.gov.br/hidroweb/download)_ software.
-2. I was not able, until now, to understand how to ask inside the URL for website respond with a `.txt` or `.csv` format, despite that both of them are avaiable manually.
-3. Some colleages have tried to download the entire database from Hidroweb, but they were blocked by a ReCaptcha authentication. In my case, I used this code to download time series of 86 rain gauges without any trouble with ReCaptcha.
+2. Some colleages have tried to download the entire database from Hidroweb, but they were blocked by a ReCaptcha authentication. In my case, I used this code to download time series of 86 rain gauges without any trouble with ReCaptcha.
