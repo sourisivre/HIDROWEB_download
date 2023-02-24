@@ -17,7 +17,6 @@ urlBase <- "https://www.snirh.gov.br/hidroweb/rest/api/documento/convencionais?"
 
 # LOOP FOR DOWNLOAD
 for (i in 1:length(rgList)){
-  #I didn't test for type 1 stations
   if(type==1){
     url <- paste(urlBase,"tipo=1&documentos=",rgList[i],sep="")
   }
