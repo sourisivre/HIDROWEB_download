@@ -19,3 +19,4 @@ Please check official [HIDROWEB website](https://www.snirh.gov.br/hidroweb/apres
 
 1. Download format is `.zip`, so the zipped file is a database (`.mdb`) in format of _[Hidro.exe](https://www.snirh.gov.br/hidroweb/download)_ software.
 2. I was not able, until now, to understand how to ask inside the URL for website respond with a `.txt` or `.csv` format, besides both of them are avaiable manually.
+3. Some colleages have tried to download the entire database from Hidroweb, but they were blocked by a ReCaptcha authentication. In my case, I used this code to download time series of 86 rain gauges without any trouble with ReCaptcha.
