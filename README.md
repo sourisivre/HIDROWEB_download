@@ -9,7 +9,7 @@ Please check official [HIDROWEB website](https://www.snirh.gov.br/hidroweb/apres
 
 * In new Hidroweb format, the URL must be something like this `https://www.snirh.gov.br/hidroweb/rest/api/documento/convencionais?tipo=2&documentos=639021`
 
-* Where `tipo=2` refers to the format of data (1-`mdb`, 2-`txt` and 3-`csv`) and `documentos=639021` refers to the station code.
+* Where `tipo=2` refers to the format of data (1 for `mdb`, 2 for`txt` and 3 for`csv` formats) and `documentos=639021` refers to the station code.
 
 * So, if you have a list of station codes, you can perform a loop via programming language (here in R) to download as many time series as the amount of stations.
 
@@ -17,5 +17,5 @@ Please check official [HIDROWEB website](https://www.snirh.gov.br/hidroweb/apres
 
 ## Important
 
-1. Download format is `.zip`, so the zipped file is a database (`.mdb`) in format of _[Hidro.exe](https://www.snirh.gov.br/hidroweb/download)_ software.
+1. Download format is `.zip`, so the zipped file is or a database (`.mdb`) in format of _[Hidro.exe](https://www.snirh.gov.br/hidroweb/download)_ software, or a `txt`, or a `csv` file.
 2. Some colleages have tried to download the entire database from Hidroweb, but they were blocked by a ReCaptcha authentication. In my case, I used this code to download time series of 86 rain gauges without any trouble with ReCaptcha.
