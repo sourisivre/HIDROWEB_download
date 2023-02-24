@@ -11,7 +11,7 @@ library(httr)
 rgList <- c(639056,638070,639034,639074,638013,638067,639079,639011,638007,639036,
             639066,639028,638000,638056,638120,638091,639070,639032,639087,639023)
 
-type <- c("2")  #1 for fluviometric stations or 2 for pluviometric stations
+type <- c("2")  #1-mdb (Hidro.exe) 2-txt 3-csv
 
 urlBase <- "https://www.snirh.gov.br/hidroweb/rest/api/documento/convencionais?"
 
@@ -23,6 +23,10 @@ for (i in 1:length(rgList)){
   }
   
   if(type==2){
+    url <- paste(urlBase,"tipo=2&documentos=",rgList[i],sep="")
+  }
+            
+  if(type==3){
     url <- paste(urlBase,"tipo=2&documentos=",rgList[i],sep="")
   }
   
