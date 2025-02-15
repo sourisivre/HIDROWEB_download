@@ -19,3 +19,6 @@ Please check official [HIDROWEB website](https://www.snirh.gov.br/hidroweb/apres
 
 1. Download format is `.zip`, so the zipped file is or a database (`.mdb`) in format of _[Hidro.exe](https://www.snirh.gov.br/hidroweb/download)_ software, or a `txt`, or a `csv` file.
 2. Some colleages have tried to download the entire database from Hidroweb, but they were blocked by a ReCaptcha authentication. In my case, I used this code to download time series of 86 rain gauges without any trouble with ReCaptcha.
+
+## UPDATE
+* 2025-02 ANA download have changed. Now you need to make a login and get a password to download data. They have provided a new API, so this code may be deprecated.
